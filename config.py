@@ -22,20 +22,20 @@ def is_enabled(value, default):
 
       
 # Owner Information
-API_ID = int(environ.get("API_ID", "29640476"))
-API_HASH = environ.get("API_HASH", "824d5b93ac8c8fddcf4088a67ecd5222")
-ADMINS = int(environ.get("ADMINS", "6138367360"))
+API_ID = int(environ.get("API_ID", "29624504"))
+API_HASH = environ.get("API_HASH", "f79abfa5d34ee920956594d3e7bb9752")
+ADMINS = int(environ.get("ADMINS", "6559697357"))
 
 # Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://infotechhero890:7c2qvHdJUYqTOaMa@cluster0.veojhex.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://meheix1333:fpgDfqqmVSb9tddS>@cluster0.jsaq8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
 DB_URI = environ.get("DB_URI", "mongodb+srv://thahero196:lP9Fb6aKL7T0y47U@cluster0.whs2bkj.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = environ.get("DB_NAME", "vjbotz")
 
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "7097361555:AAHOhbFWGflLqJQcY5vWleTU-iXvfai_rXs")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Anime_file_store1_bot") # your bot username without @
+BOT_TOKEN = environ.get("BOT_TOKEN", "7931865831:AAEWnvrtWxP5q7XOFkL9mqFX_elonXHB9VI")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Anime_Filesa_bot") # your bot username without @
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/66604e5911df5a0c43ffa.jpg https://graph.org/file/f5a26ac21b060d5787ea3.jpg https://graph.org/file/30539d8f1fc92423d6a19.jpg https://graph.org/file/701ff72fb43d85e073f03.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
@@ -43,7 +43,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002005121747"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002389736182"))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002067183105')).split()]
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -81,9 +81,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://file-store-bot-ajay-client.onrender.com"
+        URL = ""
     else:
-        URL = "https://file-store-bot-ajay-client.onrender.com"
+        URL = ""
 
 
 
