@@ -44,7 +44,7 @@ AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Second
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002005121747"))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002067183105')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002341682244')).split()]
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -66,7 +66,7 @@ class Var(object):
     name = str(getenv('name', 'filetolinkvjbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002124914386'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002387497656'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
@@ -81,9 +81,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://file-store-bot-ajay-client.onrender.com"
+        URL = ""
     else:
-        URL = "https://file-store-bot-ajay-client.onrender.com"
+        URL = ""
 
 
 
